@@ -34,6 +34,7 @@ const Title = styled.h1`
   }
 `;
 
+
 const Icons = styled.div`
   display: flex;
   margin-bottom: 3rem;
