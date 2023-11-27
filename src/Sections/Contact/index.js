@@ -33,8 +33,7 @@ const Title = styled.h1`
     border-bottom: 2px solid var(--pink);
   }
 `;
-
-
+//sd
 const Icons = styled.div`
   display: flex;
   margin-bottom: 3rem;
