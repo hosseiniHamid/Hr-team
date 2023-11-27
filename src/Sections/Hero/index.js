@@ -1,6 +1,6 @@
 // This is HeroSection component, Main top section of website
 
-import styled, { keyframes } from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 import pinkBlob from "../../assets/blobPink.png";
 import purpleBlob from "../../assets/blob purple.png";
@@ -130,7 +130,7 @@ const Circle = styled.span`
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: var(--purple);
+  background-color: #4d8de6;
   margin-right: 0.5rem;
 `;
 
@@ -173,46 +173,48 @@ const CTA = styled.button`
 `;
 
 const HeroSection = () => {
-  return (
-    <HomeSection id="home">
-      <Blobs>
-        <PinkBlob>
-          <img src={pinkBlob} alt="" width="400" height="400" />{" "}
-        </PinkBlob>
-        <WhiteBlob>
-          <img src={whiteBlob} alt="" width="400" height="400" />
-        </WhiteBlob>
-        <PurpleBlob>
-          <img src={purpleBlob} alt="" width="400" height="400" />
-        </PurpleBlob>
-      </Blobs>
+    return (
+        <HomeSection id="home">
+            <Blobs>
+                <PinkBlob>
+                    <img src={pinkBlob} alt="" width="400" height="400"/>{" "}
+                </PinkBlob>
+                <WhiteBlob>
+                    <img src={whiteBlob} alt="" width="400" height="400"/>
+                </WhiteBlob>
+                <PurpleBlob>
+                    <img src={purpleBlob} alt="" width="400" height="400"/>
+                </PurpleBlob>
+            </Blobs>
 
-      <MainContent id="home">
-        <Lb id="leftBlock">
-          <Topic>
-            <Circle />
-            <span>We Build Web</span>
-          </Topic>
-          <Title>Transforming your digital presence</Title>
-          <SubText>
-            we help fast growing companies build award winning websites
-          </SubText>
-          <CTA>
-            Get in touch &nbsp;
-            <img src={arrow} alt="cta" width="100" height="100" />
-          </CTA>
-        </Lb>
+            <MainContent id="home">
+                <Lb id="leftBlock">
+                    <Topic>
+                        <Circle/>
+                        <span>We Build Web</span>
+                    </Topic>
+                    <Title>Your software partner</Title>
+                    <SubText>
+                        we help fast growing companies build award winning websites
+                    </SubText>
+                    <a href="#contact">
+                        <CTA>
+                            Get in touch &nbsp;
+                            <img src={arrow} alt="cta" width="100" height="100"/>
+                        </CTA>
+                    </a>
+                </Lb>
 
-        <MobileSvg
-          src={Mobile}
-          alt="Mobile Svg"
-          srcset=""
-          width="400"
-          height="400"
-        />
-      </MainContent>
-    </HomeSection>
-  );
+                <MobileSvg
+                    src={Mobile}
+                    alt="Mobile Svg"
+                    srcset=""
+                    width="400"
+                    height="400"
+                />
+            </MainContent>
+        </HomeSection>
+    );
 };
 
 export default HeroSection;

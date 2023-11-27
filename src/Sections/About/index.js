@@ -53,13 +53,14 @@ const Main = styled.div`
 const Title = styled.h1`
   font-size: 2rem;
   display: inline-block;
+  margin-top: 25px;
 `;
 
 const CurvedLine = styled.div`
   width: 7rem;
   height: 2rem;
-  border: solid 5px var(--purple);
-  border-color: var(--purple) transparent transparent transparent;
+  border: solid 5px #4d8de6;
+  border-color: #4d8de6 transparent transparent transparent;
   border-radius: 150%/60px 70px 0 0;
 `;
 
@@ -145,7 +146,7 @@ const About = () => {
               value.
             </Text>
             <div>
-              <Circle style={{ backgroundColor: "var(--purple)" }} />
+              <Circle style={{ backgroundColor: "#4d8de6" }} />
               <Circle style={{ backgroundColor: "var(--pink)" }} />
               <Circle style={{ backgroundColor: "var(--black)" }} />
             </div>

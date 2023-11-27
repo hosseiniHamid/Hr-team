@@ -40,7 +40,7 @@ const Circle = styled.span`
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: var(--purple);
+  background-color: #4d8de6;
   margin-right: 0.5rem;
 `;
 

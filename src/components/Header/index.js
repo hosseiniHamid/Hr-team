@@ -2,7 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-png.png";
+
 
 const Headers = styled.header`
   display: flex;
@@ -23,12 +24,16 @@ const Headers = styled.header`
 
 const Logo = styled.a`
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 2rem;
   height: auto;
   cursor: pointer;
   img {
     margin-right: 0.5rem;
+    height: 65px;
+    width: 65px;
+    border-radius: 5px;
   }
 `;
 
@@ -56,7 +61,7 @@ const Nav = styled.nav`
     }
     &:not(:last-child):hover::after {
       width: 100%;
-      background: var(--purple);
+      background: #4d8de6;
     }
     /* &:not(:last-child) {
       margin-right: 2rem;
@@ -70,7 +75,7 @@ const Nav = styled.nav`
 `;
 
 const Button = styled.button`
-  background-color: var(--purple);
+  background-color: #4d8de6;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   color: var(--white);
@@ -212,7 +217,7 @@ const Header = () => {
         top: "1rem",
         left: "3rem",
         right: "3rem",
-        padding: "1.5rem 2rem",
+        padding: "1.5rem 6.5rem",
 
         borderRadius: "50px",
 
@@ -234,8 +239,11 @@ const Header = () => {
   return (
     <Headers ref={ref}>
       <Logo>
-        <img src={logo} alt="CodeBucks" />
-        <h3>CodeBucks</h3>
+        <img src={logo} alt="HR_team" />
+        <div style={{display:"flex",marginTop:5}}>
+          <div style={{fontSize: 15}}>HR</div>
+          <div style={{fontSize: 15}}>Team</div>
+        </div>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

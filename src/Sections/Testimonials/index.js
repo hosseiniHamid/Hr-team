@@ -31,7 +31,7 @@ const Title = styled.h1`
     bottom: 0;
     transform: translate(-50%, 0.5rem);
     /* or 100px */
-    border-bottom: 2px solid var(--purple);
+    border-bottom: 2px solid #4d8de6;
   }
 `;
 
@@ -84,27 +84,26 @@ const Testimonials = () => {
       <Carousal>
         <Slider {...settings}>
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly
-        recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            text="I always enjoyed having Hamidreza in my team! his positivity , courage and and friendly behavior has been always contributing a lot to any project I had him on. His flexibility and willingness to learn new things makes Hamidreza very easy to collaborate with."
+            name="Saeid Makhmali"
             image="avatar-1"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            text="Hamidreza consistently demonstrated briliant talent in his course that I was its lecturer. He possesses a strong moral compass, exhibiting integrity, honesty, and a deep sense of responsibility. His hardworking to done in his projects was outstanding."
+            name="Farzane kimiyaei"
             image="avatar-2"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            text="About his tech skills I can say if you give a project to him he will deliver that to you beyond your expectations he is one of the front end developers who I can say he is more than his work experience Beyond his technical skills, he is a pleasure to work with. he is a team player, always willing to lend a helping hand and share his knowledge with colleagues."
+            name="Nima ferdowsi"
             image="avatar-3"
           />
 
           <Card
-            text="CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            text="HamidReza is a very hard-working person who can tackle any front-end problem with ease. We have worked together on several projects, and I found him a very productive person, hardworking, broad-minded, and forward-thinking individual. The desire for proficiency and education makes HamidReza a valuable asset to the team. Working with him is a signature of success."
+            name="Hamed Atashbar"
             image="avatar-4"
           />
         </Slider>

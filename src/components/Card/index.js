@@ -34,7 +34,7 @@ const TEXT = styled.h4`
   padding: 0 calc(1rem + 1vw);
 
   text-align: center;
-  font-size: calc(0.6rem + 0.5vw);
+  font-size: calc(0.5rem + 0.5vw);
 `;
 
 const NAME = styled.h3`
@@ -43,16 +43,22 @@ const NAME = styled.h3`
   font-size: calc(0.5rem + 1vw);
 `;
 
-const Card = ({ name, text, image }) => {
-  const Avatar = require(`../../assets/${image}.jpg`).default;
+const Card = ({name, text, image}) => {
+    const Avatar = require(`../../assets/${image}.jpg`).default;
 
-  return (
-    <CARD>
-      <Image img={Avatar} width="400" height="400" />
-      <TEXT>{text}</TEXT>
-      <NAME>{name}</NAME>
-    </CARD>
-  );
+    return (
+        <CARD>
+            <Image img={Avatar} width="400" height="400"/>
+            <TEXT>{text}</TEXT>
+            <a target="_blank" href={name == 'Hamed Atashbar' ? 'https://www.linkedin.com/in/hamed-atashbar-bbbb0551/' : '' ||
+            name == 'Saeid Makhmali' ? 'https://www.linkedin.com/in/saeid-makhmalbaf-ph-d-a91b5846/' : '' ||
+            name == 'Nima ferdowsi' ? 'https://www.linkedin.com/in/nima-ferdowsi-75b7811a9/' : '' ||
+            name == 'Farzane kimiyaei' ? 'https://www.linkedin.com/in/farzaneh-kimiaei-89964012a/' : ''
+            }>
+                <NAME>{name}</NAME>
+            </a>
+        </CARD>
+    );
 };
 
 export default Card;
